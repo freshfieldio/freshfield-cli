@@ -57,6 +57,12 @@ export function updateCommand(program: Command): void {
           await DisplayManager.animateText(' Processing your new update...', 1500);
           
           DisplayManager.showSuccessBox(response);
+          logger.log('\n');
+          logger.warning('This is only a draft. You can edit and publish it in your dashboard.');
+          if (response.data?.id) {
+            logger.warning(FRESHFIELD_API_URL + '/app/' + config.appId + '/#' + response.data.id);
+          }
+          
           
         } catch (error) {
           spinner.fail('Failed to generate update texts');

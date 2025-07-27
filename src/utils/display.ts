@@ -136,10 +136,5 @@ export class DisplayManager {
     }
 
     console.log('\n' + this.createBox('🎉 New update draft for ' + data.appName + '!', content) + '\n');
-    
-    if (data.id) {
-      const updateUrl = `${FRESHFIELD_API_URL}/app/${data.appId}/#${data.id}`;
-      console.log(`🔗 You can edit and publish your new update draft here: ${updateUrl}\n`);
-    }
   }
 } 

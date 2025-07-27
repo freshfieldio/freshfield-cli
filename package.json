@@ -1,0 +1,52 @@
+{
+  "name": "freshfield-cli",
+  "version": "0.0.1",
+  "description": "CLI tool for Freshfield.io platform | share and manage changelogs & release notes generated from git commits",
+  "main": "dist/index.js",
+  "bin": {
+    "freshfield": "dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": ["cli", "freshfield", "freshfield.io", "freshfield", "freshfield-cli"],
+  "author": "Freshfield.io",
+  "license": "MIT",
+  "packageManager": "pnpm@10.12.1",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1",
+    "inquirer": "^9.2.15",
+    "conf": "^12.0.0",
+    "update-notifier": "^6.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/inquirer": "^9.0.7",
+    "@types/update-notifier": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.3.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}

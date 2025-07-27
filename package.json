@@ -1,5 +1,5 @@
 {
-  "name": "freshfield-cli",
+  "name": "@freshfieldio/freshfield-cli",
   "version": "0.0.1",
   "description": "CLI tool for Freshfield.io platform | share and manage changelogs & release notes generated from git commits",
   "main": "dist/index.js",

@@ -58,7 +58,7 @@ export function updateCommand(program: Command): void {
           
           DisplayManager.showSuccessBox(response);
           logger.log('\n');
-          logger.warning('This is only a draft. You can edit and publish it in your dashboard.');
+          logger.warning('This is only a PRIVATE DRAFT. You can edit and publish it in your dashboard.');
           if (response.data?.id) {
             logger.warning(FRESHFIELD_API_URL + '/app/' + config.appId + '/#' + response.data.id);
           }
@@ -89,8 +89,8 @@ async function getUpdateMethod(): Promise<UpdateOptions['method']> {
       name: 'method',
       message: 'How would you like to select commits?',
       choices: [
-        { name: '📅 Date Range - Select commits between specific dates', value: 'date-range' },
-        { name: '🔢 Commit Count - Select last N commits', value: 'commit-count' },
+        { name: 'Date Range - Select commits between specific dates', value: 'date-range' },
+        { name: 'Commit Count - Select last N commits', value: 'commit-count' },
         // { name: '⏳ Coming soon...', value: 'coming-soon', disabled: true }
       ]
     }

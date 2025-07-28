@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "bin": {
     "freshfield": "dist/index.js",
+    "freshfield-cli": "dist/index.js",
     "ff": "dist/index.js"
   },
   "type": "module",
@@ -22,10 +23,11 @@
   },
   "keywords": [
     "cli",
-    "freshfield",
-    "freshfield.io",
-    "freshfield",
-    "freshfield-cli"
+    "ai",
+    "release-notes",
+    "changelog",
+    "release-notes-generator",
+    "changelog-generator"
   ],
   "author": "Freshfield.io",
   "license": "MIT",

@@ -8,6 +8,10 @@
     "freshfield-cli": "dist/index.js",
     "ff": "dist/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freshfieldio/freshfield-cli"
+  },
   "type": "module",
   "scripts": {
     "build": "tsc",

@@ -2,7 +2,7 @@ import Conf from 'conf';
 import { Config } from '../types/index.js';
 
 // Constants
-export const FRESHFIELD_API_URL = 'http://localhost:5173';
+export const FRESHFIELD_API_URL = 'https://app.freshfield.io';
 
 const config = new Conf<Config>({
   projectName: 'freshfield-cli',

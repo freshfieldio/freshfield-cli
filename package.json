@@ -1,6 +1,6 @@
 {
   "name": "freshfield-cli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "CLI tool for Freshfield.io platform | share and manage changelogs & release notes generated from git commits",
   "main": "dist/index.js",
   "bin": {
